@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 body, html {
   font-family: "Open Sans", sans-serif;
+  font-size: 13px;
 }
 
 a {
@@ -31,10 +32,12 @@ a:hover {
   padding: 7px;
   font-size: 13px;
   font-weight: 600;
+  box-sizing: border-box;
 }
 .head-line .contacts-block {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 .head-line .contacts-block select {
   background-color: transparent;
@@ -50,6 +53,7 @@ a:hover {
   position: absolute;
   right: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 .head-line .contacts-block .collback-block a:last-of-type {
   margin-left: 36px;
@@ -59,8 +63,100 @@ a:hover {
 }
 .head-line .contacts-block .social-btn-header a, .head-line .contacts-block .social-btn-header a:last-of-type {
   margin-left: 19px;
+  display: inline-block;
+  width: 18px;
+  height: 15.5px;
+}
+.head-line .contacts-block .social-btn-header a.telegram, .head-line .contacts-block .social-btn-header a:last-of-type.telegram {
+  background-image: url(../img/telega.svg);
+  background-repeat: no-repeat;
+}
+.head-line .contacts-block .social-btn-header a.skype, .head-line .contacts-block .social-btn-header a:last-of-type.skype {
+  background-image: url(../img/skype.svg);
+  background-repeat: no-repeat;
+}
+.head-line .contacts-block .social-btn-header a.telephon, .head-line .contacts-block .social-btn-header a:last-of-type.telephon {
+  background-image: url(../img/telephon.svg);
+  background-repeat: no-repeat;
+}
+
+button {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  font-weight: 600;
+  border: none;
+  font-size: 13px;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .menu-block {
   box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.16);
+}
+.menu-block img {
+  height: 100%;
+}
+.menu-block .logo {
+  display: flex;
+  font-size: 13px;
+  font-style: italic;
+}
+.menu-block .logo p {
+  margin-left: 16px;
+  font-weight: 400;
+}
+.menu-block .logo p span {
+  color: #D2001C;
+}
+.menu-block .search-bar {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-block .search-bar .ssearch {
+  position: relative;
+}
+.menu-block .search-bar .ssearch button {
+  color: #D2001C;
+  border: 2px solid #D2001C;
+  padding: 9px 17px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.menu-block .search-bar .ssearch button:hover {
+  color: #fff;
+  background-color: #D2001C;
+  transition: 0.2s ease;
+}
+.menu-block .search-bar .ssearch input {
+  width: 521px;
+  height: 47px;
+  border: 1px solid #BDBDBD;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  font-weight: 600;
+}
+.menu-block .img-yandex {
+  padding: 5px 12px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+.menu-block .login button {
+  padding-left: 30px;
+  background-image: url(../img/login.svg);
+  background-repeat: no-repeat;
+  background-position-x: -6px;
+}
+.menu-block .cart button {
+  padding: 9px 16px 9px 48px;
+  color: #fff;
+  background-color: #D2001C;
+  background-image: url(../img/cart.svg);
+  background-size: 15%;
+  background-position-x: 15px;
+  background-position-y: center;
 }
