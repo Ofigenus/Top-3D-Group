@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProDisplay-Black.woff2") format("woff2"), url("../fonts/SSFProDisplay-Black.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -25,9 +49,10 @@ li {
   margin-top: 13px;
 }
 
-p {
+p, h2 {
   margin: 0;
   padding: 0;
+  font-weight: inherit;
 }
 
 .row {
@@ -126,6 +151,7 @@ button {
   display: flex;
   font-size: 13px;
   font-style: italic;
+  align-items: center;
 }
 .menu-block .logo p {
   margin-left: 16px;
@@ -323,9 +349,14 @@ button {
   margin-bottom: 25px;
   font-family: "SF Pro Text";
 }
+.col-about p a {
+  color: #D2001C;
+  text-decoration: underline;
+}
 
 .our-team img {
   margin-bottom: 55px;
+  width: 100%;
 }
 
 .one-see {
@@ -352,6 +383,7 @@ button {
   color: #4D4D4D;
   border-bottom: 1px solid #4D4D4D;
   font-size: 16px;
+  font-family: "SF Pro Text";
 }
 .one-see ul li a:hover {
   color: #D2001C;
@@ -362,8 +394,9 @@ button {
   font-family: "SF Pro Text";
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
-.block-see p {
+.block-see h2 {
   font-size: 24px;
   font-weight: 500;
   color: #222;
@@ -379,4 +412,13 @@ button {
 
 .video {
   height: 150px;
+  margin-top: 70px;
+  padding: 70px 0;
+  background-color: #F9F9F9;
+  font-family: "SF Pro Text";
+}
+.video h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #222;
 }

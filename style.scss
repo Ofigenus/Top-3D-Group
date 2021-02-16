@@ -1,6 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
+        url('../fonts/SSFProDisplay-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src:url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 $font-main: 13px;
+$font-content: 'SF Pro Text';
 
 body,
 html {
@@ -29,9 +67,10 @@ li {
     margin-top: 13px;
 }
 
-p{
+p, h2{
     margin: 0;
     padding: 0;
+    font-weight: inherit;
 }
 
 .row {
@@ -143,6 +182,7 @@ button {
         display: flex;
         font-size: $font-main;
         font-style: italic;
+        align-items: center;
 
         p {
             margin-left: 16px;
@@ -344,7 +384,7 @@ button {
 
 .col-motto {
     max-width: 520px;
-    font-family: 'SF Pro Text';
+    font-family: $font-content;
 
     .motto {
         font-size: 27px;
@@ -387,12 +427,18 @@ button {
          font-weight: 500;
          color: #4D4D4D;
          margin-bottom: 25px;
-         font-family: 'SF Pro Text';
+         font-family: $font-content;
+
+         a {
+             color: #D2001C;
+             text-decoration: underline;
+         }
      }
 }
 
 .our-team img{
     margin-bottom: 55px;
+    width: 100%;
 }
 
 //Лучше один раз увидеть
@@ -422,6 +468,7 @@ button {
             color: #4D4D4D;
             border-bottom: 1px solid #4D4D4D;
             font-size: 16px;
+            font-family: $font-content;
             
             &:hover {
                 color: #D2001C;
@@ -434,10 +481,11 @@ button {
 
 }
 .block-see {
-    font-family: 'SF Pro Text';
+    font-family: $font-content;
     display: flex;
     align-items: center;
-    p {
+    margin-bottom: 30px;
+    h2 {
         font-size: 24px;
         font-weight: 500;
         color: #222;
@@ -452,8 +500,16 @@ button {
     }
 }
 
-
-
 .video {
     height: 150px;
+    margin-top: 70px;
+    padding: 70px 0;
+    background-color: #F9F9F9;
+    font-family: $font-content;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+        color: #222;
+    }
 }
