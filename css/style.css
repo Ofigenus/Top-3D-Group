@@ -57,6 +57,7 @@ p, h2 {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .container-max {
@@ -65,8 +66,9 @@ p, h2 {
 }
 
 .container {
-  max-width: 1234px;
+  max-width: 1204px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header-block {
