@@ -25,6 +25,15 @@ li {
   margin-top: 13px;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+}
+
 .container-max {
   max-width: 1440px;
   margin: 0 auto;
@@ -167,6 +176,10 @@ button {
   background-image: url(../img/login.svg);
   background-repeat: no-repeat;
   background-position-x: -6px;
+  position: relative;
+}
+.menu-block .login button:hover {
+  color: #D2001C;
 }
 .menu-block .cart button {
   padding: 9px 16px 9px 48px;
@@ -176,6 +189,9 @@ button {
   background-size: 15%;
   background-position-x: 15px;
   background-position-y: center;
+}
+.menu-block .cart button:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .menu-block .first-menu-bar ul a {
   font-weight: 400;
@@ -203,6 +219,164 @@ button {
   background-color: #BDBDBD;
   margin: 22px 0;
 }
-.menu-block .nav-main ul li > a {
+
+.nav-main ul li > a {
   font-weight: 700;
+}
+.nav-main .menu-main > li {
+  position: relative;
+  padding-right: 15px;
+  padding-bottom: 22px;
+}
+.nav-main .menu-main > li::after {
+  content: " ";
+  width: 10px;
+  height: 100%;
+  background-image: url(../img/menu.svg);
+  color: #BDBDBD;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.nav-main .menu-main > li:hover .submenu {
+  display: flex;
+}
+.nav-main .menu-main > li:hover::after {
+  transform: rotate(180deg);
+}
+.nav-main .submenu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0px 10px 10px;
+  top: 68%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.09);
+}
+.nav-main .submenu li a {
+  position: relative;
+}
+.nav-main .submenu li a::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #333;
+  content: "";
+  transition: width 0.4s ease-out;
+  width: 0;
+}
+.nav-main .submenu li a:hover::after {
+  width: 100%;
+}
+
+.col-motto {
+  max-width: 520px;
+  font-family: "SF Pro Text";
+}
+.col-motto .motto {
+  font-size: 27px;
+  font-weight: 400;
+  max-width: 365px;
+  line-height: 32px;
+  padding-right: 155px;
+  padding-bottom: 40px;
+}
+.col-motto .terms {
+  max-width: 255px;
+  color: #C4C4C4;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+}
+.col-motto button {
+  padding: 12px 70px;
+  background-color: #D2001C;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #D2001C;
+}
+.col-motto button:hover {
+  background-color: #fff;
+  color: #D2001C;
+  transition: 0.2s ease;
+}
+
+.col-about {
+  max-width: 708px;
+}
+.col-about p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4D4D4D;
+  margin-bottom: 25px;
+  font-family: "SF Pro Text";
+}
+
+.our-team img {
+  margin-bottom: 55px;
+}
+
+.one-see {
+  margin-top: 70px;
+}
+.one-see ul li {
+  position: relative;
+  padding-right: 21px;
+}
+.one-see ul li::after {
+  content: " ";
+  background-image: url(../img/arrow2.svg);
+  width: 6px;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  background-position-y: center;
+}
+.one-see ul li:hover::after {
+  background-image: url(../img/arrow-red.svg);
+}
+.one-see ul li a {
+  color: #4D4D4D;
+  border-bottom: 1px solid #4D4D4D;
+  font-size: 16px;
+}
+.one-see ul li a:hover {
+  color: #D2001C;
+  border-color: #D2001C;
+}
+
+.block-see {
+  font-family: "SF Pro Text";
+  display: flex;
+  align-items: center;
+}
+.block-see p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+  padding-right: 22px;
+}
+.block-see span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  max-width: 916px;
+  opacity: 0.1;
+}
+
+.video {
+  height: 150px;
 }
