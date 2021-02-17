@@ -89,9 +89,13 @@
   //mob-menu
   $(document).ready(function(){
     $('.main-menu-title').click(function(){
-           $('.submenu').toggleClass('active');
+           $('.submenu-mob').toggleClass('active');
            $('.first').toggleClass('padding-mob');
+
         });
 
-    
+       $('.submenu-mob .menu__group').click(function (e) {
+        $(this).find('.submenu2').toggleClass('active'); 
+     });
+
    });
