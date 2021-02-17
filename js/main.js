@@ -49,3 +49,49 @@
     
     jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
   })();
+
+
+  // ===== Slider =======
+
+  $('.responsive').slick({
+    dots: false,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  //mob-menu
+  $(document).ready(function(){
+    $('.main-menu-title').click(function(){
+           $('.submenu').toggleClass('active');
+           $('.first').toggleClass('padding-mob');
+        });
+
+    
+   });

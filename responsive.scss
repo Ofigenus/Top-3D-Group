@@ -39,6 +39,12 @@
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    .slick-initialized .slick-slide {
+        justify-content: center;
+    }
+  }
+
   @media screen and (max-width: 1105px) {
     .menu-main, .login {
       display: none;
@@ -46,7 +52,9 @@
 
     .menu {
         display: flex;
+
     }
+
 
   }
 
@@ -78,6 +86,7 @@
         margin-bottom: 30px;
     }
   }
+
 
   @media screen and (max-width: 750px) {
     .search-adaptive {
@@ -153,6 +162,14 @@
   @media screen and (max-width: 415px) {
     .menu-block .search-bar .ssearch input, .menu-block .search-bar .ssearch {
         width: 100%;
+    }
+
+    .r-list {
+      padding-left: 90px !important;
+    }
+
+    .submenu {
+      padding-left: 0 !important;
     }
 
   }
