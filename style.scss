@@ -246,14 +246,12 @@ h2 {
   }
 
 .menu {
-    --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
-    --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
     --uiMenuCircleBackgroundColor: #FED600;
 
     --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
     --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
 
-    --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - 1rem);
+    
 
     --hamburgerWidth: var(--uiMenuHamburgerWidth);
     --hamburgerHeight: var(--uiMenuHamburgerHeight);
@@ -312,8 +310,8 @@ h2 {
 
 .menu__toggle {
     box-sizing: border-box;
-    width: var(--uiMenuCircleSize);
-    height: var(--uiMenuCircleHeight);
+    width: 6.25rem;
+    height: calc(6.25rem / 2);;
     flex: none;
 
     position: relative;
@@ -325,7 +323,7 @@ h2 {
     content: "";
     width: 1.2em;
     height: 1.2em;
-    font-size: var(--uiMenuCircleSize);
+    font-size: 6.25rem;
     /* 1 */
 
     background-color: var(--uiMenuCircleBackgroundColor);
