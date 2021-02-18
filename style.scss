@@ -241,6 +241,12 @@ h2 {
   =====
   */
 
+  :root {
+    --menuCircleBackgroundColor: #FED600;
+    --menuHamburgerBackgroundColor: #000;
+    --menuHaburgerOutlineColor: #FED600;
+}
+
   .main-list>li {
       display: block;
   }
@@ -417,12 +423,6 @@ h2 {
   SETTINGS
   =====
   */
-
-:root {
-    --menuCircleBackgroundColor: #FED600;
-    --menuHamburgerBackgroundColor: #000;
-    --menuHaburgerOutlineColor: #FED600;
-}
 
 .menu_activated {
     --menuHaburgerOutlineColor: #000;
