@@ -7,7 +7,6 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
     -ms-touch-action: pan-y;
     touch-action: pan-y;
 }
@@ -24,7 +23,6 @@
 
     &.dragging {
         cursor: pointer;
-        cursor: hand;
     }
 }
 .slick-slider .slick-track,
@@ -74,9 +72,9 @@
 
     display: none;
 
-    &.dragging img {
+    /*&.dragging img {
         pointer-events: none;
-    }
+    }*/
 
     .slick-initialized & {
         display: flex;

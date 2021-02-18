@@ -241,30 +241,23 @@ h2 {
   =====
   */
 
-  :root {
-    --menuCircleBackgroundColor: #FED600;
-    --menuHamburgerBackgroundColor: #000;
-    --menuHaburgerOutlineColor: #FED600;
-}
-
   .main-list>li {
       display: block;
   }
 
 .menu {
     --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
-    --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
     --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
-    --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
+    --uiMenuCircleBackgroundColor: #FED600;
 
     --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
     --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
 
-    --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
+    --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - 1rem);
 
     --hamburgerWidth: var(--uiMenuHamburgerWidth);
     --hamburgerHeight: var(--uiMenuHamburgerHeight);
-    --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
+    --hamburgerBackgroundColor: #000;
 
     width: 100%;
 
@@ -375,7 +368,7 @@ h2 {
   */
 
 .menu__toggle:focus {
-    outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
+    outline: var(--menuHaburgerOutlineOWidth, 2px) solid #FED600;
     outline-offset: var(--menuHaburgerOutlineOffset, 5px);
 }
 
@@ -424,9 +417,7 @@ h2 {
   =====
   */
 
-.menu_activated {
-    --menuHaburgerOutlineColor: #000;
-}
+
 
 // top line
 
