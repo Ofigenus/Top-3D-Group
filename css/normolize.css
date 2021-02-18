@@ -2,10 +2,6 @@
     outline: none !important;
   }
   
-  html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-  }
   
   body {
     margin: 0;
@@ -125,7 +121,6 @@
   
   img {
     border: 0;
-    pointer-events: none;
   }
   
   svg:not(:root) {
@@ -176,7 +171,7 @@
   html input[type="button"],
   input[type="reset"],
   input[type="submit"] {
-    -webkit-appearance: button;
+
     cursor: pointer;
   }
   
@@ -185,11 +180,6 @@
     cursor: default;
   }
   
-  button::-moz-focus-inner,
-  input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
   
   input {
     line-height: normal;
@@ -201,15 +191,7 @@
     padding: 0;
   }
   
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-  }
   
-  input[type="search"]::-webkit-search-cancel-button,
-  input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
   
   fieldset {
     border: 1px solid #c0c0c0;
